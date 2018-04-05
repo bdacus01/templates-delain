@@ -6,3 +6,55 @@
     defined here.
 
 ***************************************************** */
+section#header .logo-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+a:focus, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+section#home-banner {
+    background-color: #fff;
+    color: #000;
+}
+.navbar-main {
+    background-color: #fff;
+}
+ul.top-nav > li.primary-action > a.btn {
+    background-color: #f2f2f2;
+    color: #000;
+}
+.navbar-main .navbar-nav > .active > a, .navbar-main .navbar-nav > .active > a:focus, .navbar-main .navbar-nav > .active > a:hover, .navbar-main .navbar-nav > .open > a, .navbar-main .navbar-nav > .open > a:focus, .navbar-main .navbar-nav > .open > a:hover, .navbar-main .navbar-nav > li > a:focus, .navbar-main .navbar-nav > li > a:hover {
+    color: #000;
+    background-color: #f2f2f2;
+}
+.navbar-main .navbar-nav > li > a {
+    color: #000;
+}
+.navbar-main li.account {
+    background-color: #fff;
+}
+.home-shortcuts {
+    background: #fff;
+    color: #000;
+}
+.home-shortcuts li a {
+    color: #000;
+}
+a {
+    color: #000;
+}
+a {
+    color: #000;
+}
+.home-shortcuts li {
+border-right: 1px solid #f2f2f2;
+}
+.home-shortcuts li:first-child {
+    border-left: 1px solid #f2f2f2;
+}
+div.header-lined h1 {
+    color: #000;
+}
