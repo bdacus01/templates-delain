@@ -41,6 +41,7 @@
                     <th class="text-center">FTP</th>
                     <th class="text-center">POP3</th>
                     <th class="text-center">IMAP</th>
+                    <th class="text-center">SMTP</th>
                     <th class="text-center">{$LANG.serverstatusserverload}</th>
                     <th class="text-center">{$LANG.serverstatusuptime}</th>
                 </tr>
@@ -61,6 +62,9 @@
                         <td class="text-center" id="port993_{$num}">
                             <span class="fa fa-spinner fa-spin"></span>
                         </td>
+                         <td class="text-center" id="port465_{$num}">
+                            <span class="fa fa-spinner fa-spin"></span>
+                        </td>
                         <td class="text-center" id="load{$num}">
                             <span class="fa fa-spinner fa-spin"></span>
                         </td>
@@ -72,6 +76,7 @@
                                 checkPort({$num}, 21);
                                 checkPort({$num}, 995);
                                 checkPort({$num}, 993);
+                                checkPort({$num}, 465);
                                 getStats({$num});
                             });
                             </script>
