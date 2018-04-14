@@ -40,7 +40,7 @@
                     <th class="text-center">HTTP</th>
                     <th class="text-center">FTP</th>
                     <th class="text-center">POP3</th>
-                    <th class="text-center">{$LANG.serverstatusphpinfo}</th>
+                   <!–– class="text-center">{$LANG.serverstatusphpinfo} ––>
                     <th class="text-center">{$LANG.serverstatusserverload}</th>
                     <th class="text-center">{$LANG.serverstatusuptime}</th>
                 </tr>
