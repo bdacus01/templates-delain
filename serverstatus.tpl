@@ -40,7 +40,7 @@
                     <th class="text-center">HTTP</th>
                     <th class="text-center">FTP</th>
                     <th class="text-center">POP3</th>
-                    <th class="text-center">{$LANG.serverstatusphpinfo}</th>
+                    <th class="text-center">IMAP</th>
                     <th class="text-center">{$LANG.serverstatusserverload}</th>
                     <th class="text-center">{$LANG.serverstatusuptime}</th>
                 </tr>
@@ -55,10 +55,12 @@
                         <td class="text-center" id="port21_{$num}">
                             <span class="fa fa-spinner fa-spin"></span>
                         </td>
-                        <td class="text-center" id="port110_{$num}">
+                        <td class="text-center" id="port995_{$num}">
                             <span class="fa fa-spinner fa-spin"></span>
                         </td>
-                        <td class="text-center"><a href="{$server.phpinfourl}" target="_blank">{$LANG.serverstatusphpinfo}</a></td>
+                        <td class="text-center" id="port993_{$num}">
+                            <span class="fa fa-spinner fa-spin"></span>
+                        </td>
                         <td class="text-center" id="load{$num}">
                             <span class="fa fa-spinner fa-spin"></span>
                         </td>
@@ -68,7 +70,8 @@
                             jQuery(document).ready(function() {
                                 checkPort({$num}, 80);
                                 checkPort({$num}, 21);
-                                checkPort({$num}, 110);
+                                checkPort({$num}, 995);
+                                checkPort({$num}, 993);
                                 getStats({$num});
                             });
                             </script>
