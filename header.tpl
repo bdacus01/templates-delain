@@ -1,19 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="{$charset}" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{if $kbarticle.title}{$kbarticle.title} - {/if}{$pagetitle} - {$companyname}</title>
+<html>
 
-    {include file="$template/includes/head.tpl"}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{if $kbarticle.title}{$kbarticle.title} - {/if}{$pagetitle} - {$companyname}</title>
+    
+{include file="$template/includes/head.tpl"}
 
     {$headoutput}
-
 </head>
 <body data-phone-cc-input="{$phoneNumberInputStyle}">
+    {$headeroutput}
+    
+    <header style="padding:50px;">
+        <nav class="navbar navbar-default navbar-fixed-top navigation-clean-button">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand" href="https://delainhosting.com/" style="height:85px;"><img src="https://delainhosting.com/assets/img/medium.png"></a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <!--  search bar <form class="navbar-form navbar-right" target="_self" style="margin-top:24px;">
+                        <div class="form-group"><label class="control-label" for="search-field"><i class="glyphicon glyphicon-search"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
+                    </form> -->
+                    <ul class="nav navbar-nav navbar-right" style="margin-bottom:auto;margin-top:17px;">
+                        <li role="presentation"><a href="https://delainhosting.com/" style="margin:auto;color:#333333;">Home</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color:#333333;">Pricing&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                                <li role="presentation"><a href="https://delainhosting.com/pricing.html">Shared Hosting</a></li>
+                                <li role="presentation"><a href="https://delainhosting.com/domains.html">Domain Names</a></li>
+                            </ul>
+                        </li>
+                        <li role="presentation"><a href="https://delainhosting.com/contact-us.html" target="_blank" style="color:#333333;">Contact Us</a></li>
+                      <!--  <li role="presentation"><a href="https://delainhosting.com/login.html" target="_blank">Client Area</a></li> -->
+                    </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
 
-{$headeroutput}
+
 
 <section id="header">
     <div class="container">
@@ -88,11 +113,13 @@
             {/if}
         </ul>
 
-        {if $assetLogoPath}
+      <!-- Removal of the Logo and text logo
+      
+      {if $assetLogoPath}
             <a href="{$WEB_ROOT}/index.php" class="logo"><img src="{$assetLogoPath}" alt="{$companyname}"></a>
         {else}
             <a href="{$WEB_ROOT}/index.php" class="logo logo-text">{$companyname}</a>
-        {/if}
+        {/if} -->
 
     </div>
 </section>

@@ -1,14 +1,27 @@
 <!-- Styling -->
+<!--dh added meta -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/fonts/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/user.css">
+<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/Pretty-Footer.css">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/Navigation-with-Button.css">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/untitled.css">
+<!--dh added meta -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,700" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/css/all.min.css?v={$versionHash}" rel="stylesheet">
 <link href="{$WEB_ROOT}/templates/{$template}/css/custom.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
 
 <script type="text/javascript">
     var csrfToken = '{$token}',
